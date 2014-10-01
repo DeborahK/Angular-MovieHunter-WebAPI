@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieHunter.API", "MovieHunter.API\MovieHunter.API.csproj", "{4E8BCD84-23BD-4883-B3F4-5A8327C4AA46}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MovieHunter.UI", "http://localhost:13582", "{B058D9DB-7201-4C4A-8EE3-BED6C276CF25}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_13582"
+		Debug.AspNetCompiler.PhysicalPath = "MovieHunter.UI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_13582\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_13582"
+		Release.AspNetCompiler.PhysicalPath = "MovieHunter.UI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_13582\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "MovieHunter.UI\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 1
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://deborahkurata.visualstudio.com/defaultcollection
+		SccProjectUniqueName0 = MovieHunter.API\\MovieHunter.API.csproj
+		SccProjectName0 = MovieHunter.API
+		SccAuxPath0 = https://deborahkurata.visualstudio.com/defaultcollection
+		SccLocalPath0 = MovieHunter.API
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E8BCD84-23BD-4883-B3F4-5A8327C4AA46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E8BCD84-23BD-4883-B3F4-5A8327C4AA46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E8BCD84-23BD-4883-B3F4-5A8327C4AA46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E8BCD84-23BD-4883-B3F4-5A8327C4AA46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B058D9DB-7201-4C4A-8EE3-BED6C276CF25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B058D9DB-7201-4C4A-8EE3-BED6C276CF25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B058D9DB-7201-4C4A-8EE3-BED6C276CF25}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{B058D9DB-7201-4C4A-8EE3-BED6C276CF25}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

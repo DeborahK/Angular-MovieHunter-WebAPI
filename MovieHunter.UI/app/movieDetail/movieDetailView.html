@@ -1,0 +1,41 @@
+﻿<div class="panel panel-primary">
+    <div class="panel-heading" style="font-size:large">
+        <a ng-href="{{movie.imdbLink}}" style="color:white">{{ movie.title }}</a>
+    </div>
+
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-2">Description: </div>
+            <div class="col-md-10">{{ movie.description }}</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Director: </div>
+            <div class="col-md-10">{{ movie.director }}</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Release Date: </div>
+            <div class="col-md-10">{{ movie.releaseDate | date}}</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Rating: </div>
+            <div class="col-md-10">{{ movie.mpaa}}</div>
+        </div>
+        <br />
+        <div ng-show="movie.keyActors">
+            <table class="table table-striped">
+                <thead>Key Actors:</thead>
+                <tbody>
+                    <tr ng-repeat="actor in movie.keyActors">
+                        <td>
+                            <a ng-href="#showActorDetail/{{actor.actorId}}">{{ actor.name }}</a>
+                        </td>
+                        <td>
+                            <a ng-href="{{actor.imdbLink}}">IMDB</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

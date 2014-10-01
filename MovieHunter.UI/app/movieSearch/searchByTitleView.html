@@ -1,0 +1,49 @@
+﻿    <div class="panel panel-primary">
+        <div class="panel-heading" style="font-size:large">{{title}}</div>
+
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-2">Filter by:</div>
+                <div class="col-md-4"><input type="text" ng-model="listFilter" /></div>
+            </div>
+
+            <div class="row" ng-show="listFilter">
+                <h3>Movies filtered by {{listFilter}}:</h3>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table" 
+                       ng-if="movieList.length">
+                    <thead>
+                        <tr>
+                            <td>
+                                <button type="button"
+                                        class="btn btn-info"
+                                        ng-click="toggleImage()">
+                                    {{showImage ? "Hide" : "Show"}} Poster
+                                </button>
+                            </td>
+                            <td style="vertical-align:bottom">Title</td>
+                            <td style="vertical-align:bottom">Director</td>
+                            <td style="vertical-align:bottom">Release Date</td>
+                            <td style="vertical-align:bottom">Rating</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="movie in movieList | filter : {title:listFilter} | orderBy : 'title'">
+                            <td>
+                                <img ng-show="showImage" style="width:50px;margin:2px"
+                                     ng-src="{{movie.imageUrl}}" title="{{movie.title}}">
+                            </td>
+                            <td>
+                                <a ng-href="#showMovieDetail/{{movie.movieId}}">{{ movie.title}}</a>
+                            </td>
+                            <td>{{ movie.director }}</td>
+                            <td>{{ movie.releaseDate | date }}</td>
+                            <td>{{ movie.mpaa | uppercase}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>

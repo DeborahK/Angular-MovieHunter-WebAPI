@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>InStep Movie Hunter</title>
+
+    <!-- Style sheets -->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="Content/app.css" rel="stylesheet" />
+</head>
+
+<body ng-app="movieHunter">
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <a class="navbar-brand" href="#">InStep Movie Hunter</a>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar">a</span>
+                    <span class="icon-bar">b</span>
+                    <span class="icon-bar">c</span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#searchByTitle">Search by Title</a></li>
+                    <li><a href="#searchByActor">Search by Actor</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div ng-view></div>
+    </div>
+
+    <!-- Library Scripts -->
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <!-- Needed for bootstrap.js -->
+    <script src="scripts/jquery-1.9.0.js"></script>
+    <!-- Needed for the drop down menu (when narrow)-->
+    <script src="scripts/bootstrap.js"></script>
+
+    <!-- Application Script -->
+    <script src="app/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="app/movieSearch/searchByTitleCtrl.js"></script>
+    <script src="app/movieSearch/searchByActorCtrl.js"></script>
+    <script src="app/movieDetail/actorDetailCtrl.js"></script>
+    <script src="app/movieDetail/movieDetailCtrl.js"></script>
+</body>
+</html>

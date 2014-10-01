@@ -1,0 +1,33 @@
+﻿<div class="panel panel-success">
+    <div class="panel-heading" style="font-size:large">
+        <a ng-href="{{actor.imdbLink}}">{{ actor.name }}</a>
+    </div>
+
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-2">Birth Date: </div>
+            <div class="col-md-10">{{ actor.birthDate | date}}</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Country: </div>
+            <div class="col-md-10">{{ actor.country }}</div>
+        </div>
+        <br />
+        <div ng-show="actor.keyMovies">
+            <table class="table table-striped">
+                <thead>Key Movies:</thead>
+                <tbody>
+                    <tr ng-repeat="movie in actor.keyMovies">
+                        <td>
+                            <a ng-href="#showMovieDetail/{{movie.movieId}}">{{ movie.title }}</a>
+                        </td>
+                        <td>
+                            <a ng-href="{{movie.imdbLink}}">IMDB</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

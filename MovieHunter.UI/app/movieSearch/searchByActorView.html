@@ -1,0 +1,37 @@
+﻿<div class="panel panel-success">
+    <div class="panel-heading" style="font-size:large">{{title}}</div>
+
+    <div class="panel-body">
+
+        <!-- Filter the Title   -->
+        <div class="row">
+            <div class="col-md-2">Filter by:</div>
+            <div class="col-md-4"><input type="text" ng-model="listFilter" /></div>
+        </div>
+
+        <div class="row" ng-show="listFilter">
+            <h3>Actors filtered by {{listFilter}}:</h3>
+        </div>
+
+        <!-- Actor List  -->
+        <div class="row">
+            <div class="col-md-4">Name</div>
+            <div class="col-md-2">Birth Date</div>
+            <div class="col-md-2">Country</div>
+
+        </div>
+        <!-- | filter : listFilter.title -->
+        <div class="row" ng-repeat="actor in actorList | filter : listFilter  | orderBy : 'name'">
+            <div class="col-md-4">
+                <a ng-href="#showActorDetail/{{actor.actorId}}">{{ actor.name }}</a>
+            </div>
+            <div class="col-md-2">{{ actor.birthDate | date}}</div>
+            <div class="col-md-2">{{ actor.country}}</div>
+        </div>
+        <div class="row" ng-hide="(actorList | filter : listFilter).length">
+            <div class="col-md-12">No matches found</div>
+        </div>
+
+    </div>
+</div>
+

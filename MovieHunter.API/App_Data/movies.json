@@ -1,0 +1,92 @@
+﻿{
+    "movieList": [
+        {
+            "movieId": "1",
+            "title": "The Lord of the Rings: The Fellowship of the Ring",
+            "director": "Peter Jackson",
+            "releaseDate": "December 19, 2001",
+            "description": "A meek hobbit of the Shire and eight companions set out on a journey to Mount Doom to destroy the One Ring and the dark lord Sauron.",
+            "mpaa": "pg-13",
+            "imdbLink": "http://www.imdb.com/title/tt0120737/?ref_=nv_sr_1",
+            "imageUrl": "http://www.coverwhiz.com/content/The-Lord-Of-The-Rings-The-Fellowship-Of-The-Ring_small.jpg",
+            "keyActors": [
+                { "actorId": "1" },
+                { "actorId": "2" },
+                { "actorId": "3" },
+                { "actorId": "4" }
+            ]
+        },
+        {
+            "movieId": "2",
+            "title": "The Lord of the Rings: The Two Towers",
+            "director": "Peter Jackson",
+            "releaseDate": "December 18, 2002",
+            "description": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
+            "mpaa": "pg-13",
+            "imdbLink": "http://www.imdb.com/title/tt0167261/?ref_=fn_al_tt_3",
+            "imageUrl": "http://www.coverwhiz.com/content/The-Lord-Of-The-Rings-The-Two-Towers_small.jpg",
+            "keyActors": [
+                { "actorId": "1" },
+                { "actorId": "2" },
+                { "actorId": "3" },
+                { "actorId": "4" }
+            ]
+        },
+        {
+            "movieId": "3",
+            "title": "The Lord of the Rings: The Return of the King",
+            "director": "Peter Jackson",
+            "releaseDate": "December 17, 2003",
+            "description": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+            "mpaa": "pg-13",
+            "imdbLink": "http://www.imdb.com/title/tt0167260/?ref_=fn_al_tt_2",
+            "imageUrl": "http://www.coverwhiz.com/content/The-Lord-Of-The-Rings-The-Return-Of-The-King_small.jpg",
+            "keyActors": [
+                { "actorId": "1" },
+                { "actorId": "2" },
+                { "actorId": "3" },
+                { "actorId": "4" }
+            ]
+        },
+        {
+            "movieId": "4",
+            "title": "The Point",
+            "director": "Fred Wolf",
+            "releaseDate": "February 2, 1971",
+            "description": "An animated story of an unusual kingdom in which everything and everybody is pointed - except for a young boy named Oblio. Despite his round head, Oblio has many friends. But an evil count, jealous that Oblio is more popular than his own son, says that without a pointed head, Oblio is an outlaw. Along with his faithful dog Arrow, Oblio is exiled to the Pointless Forest. There, he has many fantastic experiences (including encounters with a 3-headed man, giant bees, a tree in the leaf-selling business, and a good-humored old rock). From his adventures, Oblio learns that it is not at all necessary to be pointed to have a point in life. Music composed and performed by Harry Nilsson ('Me and My Arrow'), who also wrote the story. ",
+            "mpaa": "nr",
+            "imdbLink": "http://www.imdb.com/title/tt0067595/?ref_=fn_al_tt_1",
+            "keyActors": [ ]
+        },
+        {
+            "movieId": "5",
+            "title": "Pirates Of The Caribbean: Curse Of The Black Pearl",
+            "director": "Gore Verbinski",
+            "releaseDate": "July 9, 2003",
+            "description": "Blacksmith Will Turner teams up with eccentric pirate 'Captain' Jack Sparrow to save his love, the governor's daughter, from Jack's former pirate allies, who are now undead.",
+            "mpaa": "pg-13",
+            "imdbLink": "http://www.imdb.com/title/tt0325980/?ref_=nm_knf_i1",
+            "imageUrl": "http://www.coverwhiz.com/content/Pirates-Of-The-Caribbean-Curse-Of-The-Black-Pearl.jpg",
+            "keyActors": [
+                { "actorId": "3" },
+                { "actorId": "5" },
+                { "actorId": "6" }
+            ]
+        },
+        {
+            "movieId": "6",
+            "title": "Pirates Of The Caribbean: Dead Man's Chest",
+            "director": "Gore Verbinski",
+            "releaseDate": "July 7, 2006",
+            "description": "Jack Sparrow races to recover the heart of Davy Jones to avoid enslaving his soul to Jones' service, as other friends and foes seek the heart for their own agenda as well.",
+            "mpaa": "pg-13",
+            "imdbLink": "http://www.imdb.com/title/tt0383574/?ref_=tt_rec_tt",
+            "imageUrl": "http://www.coverwhiz.com/content/Pirates-Of-The-Caribbean-Dead-Mans-Chest.jpg",
+            "keyActors": [
+                { "actorId": "3" },
+                { "actorId": "5" },
+                { "actorId": "6" }
+            ]
+        }
+    ]
+}
